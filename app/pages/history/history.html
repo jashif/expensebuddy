@@ -1,0 +1,56 @@
+<!--
+  Generated template for the HistoryPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>History</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="history">
+<ion-list *ngIf="noexpense==false">
+  
+  
+        <h3>Previous Month Expenses</h3>
+
+    <ion-item>
+    Per Share 
+    <ion-badge appcolor item-right>
+      Rs {{perusershare}}
+    </ion-badge>
+  </ion-item>
+  <ion-item>
+    Total Expense 
+    <ion-badge appcolor item-right>
+     Rs {{totalexpense}}
+    </ion-badge>
+  </ion-item>
+  
+  <h3>Settlements</h3>
+  <ion-item *ngFor="let dt of settlements">
+    <h2>{{dt.name}}</h2>
+    <p>{{dt.desc}}</p>
+    
+  </ion-item>
+ 
+ 
+  <h3>Roomies Share</h3>
+  <ion-item *ngFor="let dt of membersspend">
+    <h2>{{dt.name}}</h2>
+    <p> Rs : {{dt.amountpayable}}</p>
+    
+  </ion-item>
+ 
+</ion-list>
+<div class="nohistory">
+ <item *ngIf="noexpense==true" text-wrap>
+   <h1> You dont have any expense for the previous month</h1>
+  </item>
+</div>
+</ion-content>

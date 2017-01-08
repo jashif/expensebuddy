@@ -1,0 +1,81 @@
+<ion-header>
+ <ion-navbar>
+    <ion-title>Invite Roomies</ion-title>
+    <!--<ion-buttons start>
+
+      <button (click)="dismiss()">
+
+        <span primary showWhen="ios">Cancel</span>
+
+        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+
+      </button>
+
+    </ion-buttons>-->
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+
+ <ion-list>
+
+    
+
+    <form #addmemeberform="ngForm" novalidate>
+
+      <ion-item>
+
+        <ion-label floating  >Name</ion-label>
+
+        <!--<ion-input [(ngModel)]="member.userName" name="UserName" type="text" #userName="ngModel" spellcheck="false" autocapitalize="off" required>
+
+        </ion-input>-->
+<ion-input [(ngModel)]="member.userName" ngControl="userName" type="text" #userName="ngForm" required>
+
+        </ion-input>
+      </ion-item>
+
+      <p [hidden]="userName.valid || submitted == false" danger padding-left>
+
+       Name is required
+
+      </p>
+
+<ion-item>
+
+        <ion-label floating>Email Address</ion-label>
+<ion-input [(ngModel)]="member.emailId" ngControl="emailId" type="text" #emailId="ngForm" required>
+
+        </ion-input>
+        <!--<ion-input [(ngModel)]="member.emailId" name="emailId" type="text" #emailId="ngModel" spellcheck="false" autocapitalize="off" required>
+
+        </ion-input>-->
+
+      </ion-item>
+
+      <p [hidden]="emailId.valid || submitted == false" danger padding-left>
+
+        Email is required
+
+      </p>
+
+     
+
+      <ion-row responsive-sm>
+
+        <ion-col>
+
+          <button (click)="addmember(addmemeberform)" type="submit" appcolor block>Invite</button>
+
+        </ion-col>
+
+      </ion-row>
+
+    </form>
+
+  </ion-list>
+
+</ion-content>

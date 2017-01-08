@@ -1,0 +1,36 @@
+
+<ion-menu [content]="content" >
+<ion-toolbar appcolor>
+    <ion-title>Expense Buddy</ion-title>
+  </ion-toolbar>
+    
+
+    <ion-content>
+        <ion-list>
+          <ion-list-header>
+
+        Menu
+
+      </ion-list-header>
+
+      <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">
+
+        <ion-icon item-left [name]="p.icon"></ion-icon>
+
+        {{p.title}}
+
+      </button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+<ion-tabs #tabmain #content  [selectedIndex]="mySelectedIndex">
+    <ion-tab [root]="tab1Root" tabTitle="Roomies" tabIcon="people"></ion-tab>
+    <!--<ion-tab [root]="tab1Root" tabTitle="Add" tabIcon="add-circle"></ion-tab>-->
+  
+    <ion-tab [root]="tab2Root" tabTitle="Activities" tabIcon="logo-usd"></ion-tab>
+    
+    <ion-tab [root]="tab3Root" tabTitle="My Dues" tabIcon="cash"></ion-tab>
+  
+    
+</ion-tabs>

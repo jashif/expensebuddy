@@ -1,0 +1,115 @@
+
+.welcome {background-color: #21759b;
+
+.welcometitle
+{
+top: 36%;
+ position: absolute;
+    top: 36%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.toolbar-background {
+
+    background: #fff;
+
+    border-color: transparent;
+
+  }
+
+
+
+  .slide-zoom {
+
+    height: 100%;
+
+  }
+
+
+
+  .slide-title {
+
+    margin-top: 2.8rem;
+ color: #ffffff;
+  }
+
+
+
+  .slide-image {
+
+    max-height: 75px;
+
+    max-width: 75px;
+
+    margin: 36px 0;
+
+  }
+
+
+
+  b {
+
+    font-weight: 500;
+
+  }
+
+
+
+  p {
+
+    padding: 0 40px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #ffffff;
+
+
+
+    b {
+
+      color: #ffffff;
+
+    }
+
+  }
+.ionic-logo {
+     position: absolute;
+    top: 36%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    margin-top: -1px;
+    height: 183px;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    margin-top: -1px; }
+  .bottom-buttons {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 27px; }
+   .bottom-buttons .button {
+      min-height: 42px;
+      width: 111px;
+      transition: none; }
+     .bottom-buttons .button.activated {
+        background-color: #69a2ff;
+        opacity: 1; }
+     .bottom-buttons .button span {
+        line-height: initial;
+        color: #404040;
+        font-size: 14px;
+        letter-spacing: 2px; }
+    
+   }

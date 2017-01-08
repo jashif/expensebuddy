@@ -1,0 +1,54 @@
+.userexpensesview {
+
+}
+.userexpensesview ion-row.header
+{
+background-color: color($colors, appcolor);
+
+color:white;
+height: 60px;
+}
+.userexpensesview ion-row.header ion-col
+{
+  width:25%;
+font-size: 15px;
+font-weight:600;
+text-align: center;
+padding-top: 20px;
+}
+ion-row.total
+{
+background-color: #404040;
+
+color:white;
+height: 50px;
+align-content: center;
+}
+ion-row.total ion-col
+{
+   width:50%;
+font-size: 18px;
+text-align: center;
+padding-top: 10px;
+}
+.userexpensesview  ion-item.rowitem:nth-child(2n+1)
+{
+padding: 0px;
+background-color:	#cceae7;
+align-content: center;
+
+}
+.userexpensesview  ion-item.rowitem:nth-child(2n)
+{
+padding: 0px;
+background-color:	#99d5cf;
+align-content: center;
+}
+.userexpensesview ion-col{
+  width:25%;
+
+text-align: center;
+font-size: 16px;
+word-wrap:overflow;
+font-weight: 300;
+}

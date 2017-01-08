@@ -1,0 +1,49 @@
+<ion-header>
+ <ion-navbar>
+    <ion-title>{{user}} Expense</ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding class="userexpensesview"> 
+
+ 
+
+         <ion-row class="header"> 
+
+          <ion-col>DATE</ion-col>
+          
+          <ion-col >NAME</ion-col>
+          <ion-col >DETAILS</ion-col>
+          <ion-col >AMT</ion-col>
+          
+        </ion-row>
+
+ 
+      
+<ion-list nolines>
+         <ion-item class="rowitem" padding="0" text-wrap *ngFor="let dt of expensesList">
+         
+           <ion-row>
+          <ion-col > {{dt.date|formatDate}}</ion-col>
+          
+          <ion-col >{{ dt.name }}</ion-col>
+          <ion-col >{{dt.description}}</ion-col>
+
+          <ion-col >{{ dt.amount }}</ion-col>
+           </ion-row>
+        
+        </ion-item>
+</ion-list>
+      <ion-row class="total">
+
+          <ion-col>TOTAL</ion-col>
+          
+          <ion-col >Rs: {{totalAmount}}</ion-col>
+
+        </ion-row>
+    
+</ion-content>

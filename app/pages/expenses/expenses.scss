@@ -1,0 +1,35 @@
+ .expenses{
+ .content .card {
+  
+  height: 130px;
+    padding-bottom: 5px;
+   padding:5px;
+    
+    /* box-shadow: 0 1px 2px #c1c9d6, inset 0 2px 0 #7a8493; */
+    -webkit-box-shadow:3px 3px 3px 3px #c2c6cd;
+    box-shadow: 3px 3px 3px 3px #c2c6cd;
+    font-weight: 350;
+    border: none;
+    border-top: 2px solid color($colors, appcolor);
+    border-radius: 2px;
+    background-color: white;
+  }
+  
+   
+     .content .card  .appname {
+      font-size: 22px;
+      padding-left:5px;
+      margin-bottom: 5px;
+      color: #404040; }
+     .content .card  .subtext {
+      font-size: 15px;  margin-bottom: 5px;
+      color: #767f8d;padding-left:5px; }
+
+        .content .card  .amounttext {
+      font-size: 22px;padding-left:5px;
+        margin-top:10px;
+      color: Green; }
+      
+    
+
+}
